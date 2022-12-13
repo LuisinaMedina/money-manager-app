@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item">
                     <h1 class="title is-size-2-desktop is-size-3 has-text-white">
@@ -40,6 +40,106 @@
             </div>
         </nav>
     </header>
+
+    <!-------------BALANCE------------->
+
+
+    <section class="section mt-4" id="balance">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3-widescreen is-4-desktop is-12-tablet">
+                    <div class="box">
+                        <h2 class="is-title is-size-3 mb-5 has-text-weight-bold">
+                            Balance
+                        </h2>
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column is-size-5">Ganancias</div>
+                            <div class="column has-text-right has-text-success has-text-weight-bold" id="incomes">
+                                +$0
+                            </div>
+                        </div>
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column is-size-5">Gastos</div>
+                            <div class="column has-text-right has-text-danger has-text-weight-bold" id="expenses">
+                                +$0
+                            </div>
+                        </div>
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column is-size-4 has-text-weight-bold">Total</div>
+                            <div class="column has-text-right has-text-weight-bold" id="total">
+                                $114
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column">
+                                <h2 class="is-title is-size-3 has-text-weight-bold">Filtros</h2>
+                            </div>
+                            <div class="column has-text-right has-text-weight-bold">
+                                <a href="#" id="hide-filters">Ocultar filtros</a>
+                            </div>
+                        </div>
+                        <div id="filters">
+                            <div class="field">
+                                <label class="label" for="filter-menu">Tipo</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select id="filter-menu">
+                                            <option value="Todos">Todos</option>
+                                            <option value="Gasto">Gasto</option>
+                                            <option value="Ganancia">Ganancia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="filter-category">Categoría</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select class="select-filter" id="filter-category">
+                                            <option>Todas</option>
+                                            <option>Comida</option>
+                                            <option>Servicios</option>
+                                            <option>Salidas</option>
+                                            <option>Educación</option>
+                                            <option>Transporte</option>
+                                            <option>Trabajo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="filter-date">Desde</label>
+                                <div class="control">
+                                    <div class="is-fullwidth">
+                                        <input class="input" type="date" name="" id="filter-date" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="filter-order">Ordenar por</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select id="filter-order">
+                                            <option value="Mas-reciente">Más reciente</option>
+                                            <option value="Menos-reciente">Menos reciente</option>
+                                            <option value="Mayor-monto">Mayor monto</option>
+                                            <option value="Menor-monto">Menor monto</option>
+                                            <option value="A/Z">A/Z</option>
+                                            <option value="Z/A">Z/A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
 
