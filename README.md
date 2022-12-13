@@ -14,7 +14,7 @@ Live Demo on Netlify:
 - Add, edit and delete new incomes or expenses.
 - Filter by type, date, category. 
 - Order the operations by date of completion, amount, description. 
--Get a report, with a summary of all your expenses and incomes. 
+- Get a report, with a summary of all your expenses and incomes. 
 
 
 
