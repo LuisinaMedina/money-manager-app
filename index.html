@@ -48,7 +48,7 @@
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-offset-1-widescreen is-3-widescreen is-4-desktop is-12-tablet">
-                    <div class="box">
+                    <div class="box has-background-white-ter">
                         <h2 class="is-title is-size-3 mb-5 has-text-weight-bold">
                             Balance
                         </h2>
@@ -71,13 +71,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box has-background-white-ter">
                         <div class="columns is-mobile is-vcentered">
                             <div class="column">
                                 <h2 class="is-title is-size-3 has-text-weight-bold">Filtros</h2>
                             </div>
                             <div class="column has-text-right has-text-weight-bold">
-                                <a href="#" id="hide-filters">Ocultar filtros</a>
+                                <a href="#" class="has-text-primary" id="hide-filters">Ocultar filtros</a>
                             </div>
                         </div>
 
@@ -142,7 +142,7 @@
                 <!--OPERATIONS-->
 
                 <div class="column is-7-widescreen is-8-desktop">
-                    <div class="box container-box">
+                    <div class="box container-box has-background-white-ter">
                         <div class="columns mb-4">
                             <div class="column">
                                 <h3 class="is-size-4 has-text-weight-bold">Operaciones</h3>
@@ -173,6 +173,82 @@
                             <p class="has-text-centered">
                                 Cambia los filtros o agrega operaciones
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------NEW OPERATION------->
+
+    <section class="section mt-5 is-hidden" id="operation-new">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-8-widescreen is-10-desktop is-offset-2-widescreen is-offset-1-desktop">
+                    <div class="box has-background-white-ter">
+                        <h2 class="title is-size-2 has-text-weight-bold">
+                            Nueva operación
+                        </h2>
+                        <div class="field mt-6">
+                            <label class="label" for="description">Descripción</label>
+                            <div class="control">
+                                <div class="is-fullwidth">
+                                    <input class="input" type="text" name="" id="description" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="amount">Monto</label>
+                            <div class="control">
+                                <div class="control">
+                                    <div class="is-fullwidth">
+                                        <input class="input" type="number" name="" id="amount" value="0" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="select-operation">Tipo</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select id="select-operation">
+                                        <option value="Gasto">Gasto</option>
+                                        <option value="Ganancia">Ganancia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="category">Categoría</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select class="categorias-select" id="category">
+                                        <option>Comida</option>
+                                        <option>Servicios</option>
+                                        <option>Salidas</option>
+                                        <option>Educación</option>
+                                        <option>Transporte</option>
+                                        <option>Trabajo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="date">Fecha</label>
+                            <div class="control">
+                                <div class="is-fullwidth">
+                                    <input class="input" type="date" name="" id="date" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons mt-6">
+                            <button class="button is-light" id="cancel-button">
+                                Cancelar
+                            </button>
+                            <button class="button is-primary" id="add-button">
+                                Agregar
+                            </button>
                         </div>
                     </div>
                 </div>
